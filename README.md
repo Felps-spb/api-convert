@@ -1,47 +1,54 @@
-API Simples de Conversão de Moedas
-Esta API permite converter valores entre diferentes moedas de forma simples e rápida.
+# API Simples de Conversão de Moedas
+Uma API fácil de usar para converter valores entre diferentes moedas.
 
 Como Testar a API
-Você pode testar a API de conversão de moedas utilizando ferramentas como Postman, Insomnia, seu navegador ou o terminal com o comando curl.
+Você pode testar a funcionalidade da API usando ferramentas como Postman, Insomnia, seu navegador ou o terminal com curl.
 
 Usando o Navegador
-Para realizar uma conversão usando o método GET, basta abrir o navegador e acessar a URL com os parâmetros necessários. Por exemplo:
+Para realizar uma conversão por meio do navegador, utilize o método GET e acesse a URL com os parâmetros apropriados. Exemplo:
 
-
-http://localhost:3000/convert?base=USD&target=EUR&amount=100
-
-Isso retornará uma resposta JSON com o valor convertido.
-
-Usando o Postman ou Insomnia
-Siga os passos abaixo para testar a API:
-
-Abra o Postman ou Insomnia.
-Crie uma nova requisição GET.
-Insira a URL da API:
-http://localhost:3000/convert
-Adicione os parâmetros de consulta (query parameters):
-base: a moeda de origem (por exemplo, USD).
-target: a moeda de destino (por exemplo, EUR).
-amount: o valor a ser convertido (por exemplo, 100).
-Envie a requisição e verifique a resposta.
-Usando o Terminal com Curl
-Você também pode usar o curl para testar a API diretamente do terminal:
-
-BASH
-
-curl "http://localhost:3000/convert?base=USD&target=EUR&amount=100"
-Exemplo de Resposta
-A resposta será um JSON contendo o valor convertido, como no exemplo abaixo:
+```http://localhost:3000/convert?base=USD&target=EUR&amount=100```
+A resposta será um JSON com o valor convertido.
 
 JSON
-
+```
 {
   "base": "USD",
   "target": "EUR",
   "amount": 100,
   "convertedAmount": 85.50
 }
+```
 
-Observações
-Certifique-se de que o servidor da API está em execução no endereço e porta corretos.
-Verifique se os códigos das moedas estão corretos e são suportados pela API.
+Usando o Postman ou Insomnia
+Siga as etapas abaixo para usar o Postman ou Insomnia:
+
+> Inicie o Postman ou Insomnia.
+- Crie uma nova requisição GET.
+- Insira a URL da API:
+```http://localhost:3000/convert```
+> Adicione os parâmetros de consulta (query parameters):
+- base: Moeda de origem (e.g., USD).
+- target: Moeda de destino (e.g., EUR).
+- amount: Valor a ser convertido (e.g., 100).
+Envie a requisição e verifique a resposta.
+
+Exemplo de Resposta
+A API retorna um JSON com o valor convertido. Veja o exemplo:
+
+JSON
+```
+{
+  "base": "USD",
+  "target": "EUR",
+  "amount": 100,
+  "convertedAmount": 85.50
+}
+```
+Notas
+Servidor: Assegure-se de que a API está rodando no endereço e porta corretos.
+Códigos de Moeda: Verifique a validade dos códigos de moeda e se são suportados pela API.
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias.
+
+
