@@ -13,10 +13,10 @@ A resposta será um JSON com o valor convertido.
 JSON
 ```
 {
-  "base": "USD",
-  "target": "EUR",
-  "amount": 100,
-  "convertedAmount": 85.50
+    "base_currency": "USD",
+    "target_currency": "EUR",
+    "amount": "100",
+    "converted_amount": 96.3
 }
 ```
 
@@ -39,10 +39,10 @@ A API retorna um JSON com o valor convertido. Veja o exemplo:
 JSON
 ```
 {
-  "base": "USD",
-  "target": "EUR",
-  "amount": 100,
-  "convertedAmount": 85.50
+    "base_currency": "USD",
+    "target_currency": "EUR",
+    "amount": "100",
+    "converted_amount": 96.3
 }
 ```
 Notas
